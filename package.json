@@ -1,0 +1,58 @@
+{
+  "name": "@copyrightsh/exa-licensed-mcp",
+  "version": "0.1.0-alpha.1",
+  "description": "Exa-powered search wrapper with Copyright.sh x402 (HTTP 402) license acquisition + ledger usage logging.",
+  "type": "module",
+  "bin": {
+    "copyrightsh-exa-licensed-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "exa",
+    "search",
+    "402",
+    "x402",
+    "licensing",
+    "copyrightsh",
+    "licensed",
+    "usage-logging"
+  ],
+  "author": "Copyright.sh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tymrtn/mcp-exa-licensed.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "tiktoken": "^1.0.10",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.3.3"
+  }
+}
+
+
+
+
+
+
+
+
+
+
